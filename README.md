@@ -8,7 +8,7 @@ Place the following in the main javascript file for each sub-plugin:
 
 ```js
 var registerSubPlugin = require('hyper-plugin-extend').registerSubPlugin;
-var SomePluginClass= require('./somePluginClass.js').SomePluginClass;
+var SomePluginClass = require('./somePluginClass.js').SomePluginClass;
 exports.onRendererWindow = registerSubPlugin('<SOME PLUGIN NAME>', SomePluginClass);
 ```
 
