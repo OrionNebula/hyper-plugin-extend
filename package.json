@@ -1,0 +1,25 @@
+{
+  "name": "hyper-plugin-extend",
+  "version": "1.0.0",
+  "description": "Allows hyper plugins to integrate with eachother.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "standard ./src/**.js | snazzy",
+    "prebuild": "npm run lint && rimraf ./dist",
+    "build": "babel src -d dist",
+    "prepublishonly": "npm run build"
+  },
+  "keywords": [
+    "hyper",
+    "hyperterm"
+  ],
+  "author": "Olivia Trewin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "rimraf": "^2.6.2",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  }
+}
