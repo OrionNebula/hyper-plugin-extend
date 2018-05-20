@@ -16,7 +16,7 @@ Place the following in the main javascript file for the parent plugin:
 
 ```js
 var registerParentPlugin = require('hyper-plugin-extend').registerParentPlugin;
-exports.onRendererWindow('<SOME PLUGIN NAME>', PluginClass => { /* do something */ })
+exports.onRendererWindow = registerParentPlugin('<SOME PLUGIN NAME>', PluginClass => { /* do something */ })
 ```
 
 To access a list of all loaded sub-plugins later, do the following:
