@@ -1,8 +1,9 @@
 {
   "name": "hyper-plugin-extend",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Allows hyper plugins to integrate with each other.",
-  "main": "dist/index.js",
+  "main": "dist/index",
+  "typings": "dist/index",
   "scripts": {
     "lint": "tslint ./src/**.ts",
     "prebuild": "npm run lint && rimraf ./dist",
