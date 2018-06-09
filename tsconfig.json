@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "es5",
+            "dom"
+        ],
+        "declaration": true,
+        "outDir": "dist",
+        "allowJs": false,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": true
+    }
+}

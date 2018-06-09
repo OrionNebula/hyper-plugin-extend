@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "tslint ./src/**.ts",
     "prebuild": "npm run lint && rimraf ./dist",
-    "build": "tsc -d ./src/**.ts --outdir dist",
+    "build": "tsc",
+    "watch:build": "tsc --watch",
     "prepublishonly": "npm run build"
   },
   "repository": {
